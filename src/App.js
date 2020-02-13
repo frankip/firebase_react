@@ -1,13 +1,21 @@
 import React from 'react';
-import './static/App.css';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
-function App() {
+import Home from './components/Home'
+import SignUp from './components/Signup/SignUpView'
+import Login from './components/Login/LoginView'
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-      <h1>Welcomes</h1>
-      </header>
-    </div>
+    <Router>
+      <div>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/login" component={Login} />
+        <Route exact path="/signup" component={SignUp} />
+      </div>
+    </Router>
+    
   );
 }
 
