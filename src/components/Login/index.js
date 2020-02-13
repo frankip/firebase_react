@@ -20,7 +20,7 @@ class LoginContainer extends Component {
             this.props.history.push("/")
             
         } catch (error) {
-            console.log(alert);
+            console.log(error);
         }
     }
 

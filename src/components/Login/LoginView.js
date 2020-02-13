@@ -1,10 +1,11 @@
 import React from "react";
+import '../../static/App.css'
 
 const LoginView = ({onSubmit}) => {
   return (
-  <div>
+  <div className="App-header">
       <h1>Login</h1>
-      <form onSubmit={onSubmit}>
+      <form className="form" onSubmit={onSubmit}>
         <label>
           Email
           <input
