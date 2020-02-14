@@ -37,7 +37,7 @@ class App extends Component {
     const { authenticated, loading} = this.state;
 
     if (loading) {
-      return <p>Loading.....</p>
+      return <div className="App-header">loading.....</div>
     }
 
     return (
